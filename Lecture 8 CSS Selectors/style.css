@@ -1,0 +1,20 @@
+*{
+    border: 5px solid brown;
+}
+.specialBox,.notSpecialBox{
+    height: 8rem;
+    width: 8rem;
+}
+.specialBox{
+    background-color: yellow;
+}
+.notSpecialBox{
+    background-color: red;
+}
+/* .pink-Border{
+    border: 10px solid pink;
+}
+
+#blueBox{
+    background-color: blue;
+} */
