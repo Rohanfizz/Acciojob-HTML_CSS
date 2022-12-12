@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .element~p{
+                background-color: lightblue;
+            }
+            
+            .button{
+                border: 2px solid gray;
+                background-color: rgb(235, 235, 235);
+                width: 4rem;
+                height: 2rem;
+                border-radius: 10px;
+            }
+            .button:hover{
+                background-color: rgb(197, 197, 197);
+                cursor: pointer;
+            }
+            .button:active{
+                background-color: rgb(160, 160, 160);
+            }
+            a:hover{
+                color: red;
+            }
+            a:active{
+                color: yellowgreen;
+            }
+            a:visited{
+                color: pink;
+            }
+            .element>div:nth-child(6){
+                border: 1px solid blue;
+            }
+            .element>div>p{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Before</p>
+        <div class="element">
+            <p>First</p>
+            <p>Second</p>
+            <p>Third</p>
+            <p>Fourth</p>
+            <div>
+                <p>Not direct child</p>
+            </div>
+            <div>
+                <p>Second Not direct child</p>
+            </div>
+        </div>
+        <p>Sibling</p>
+        <p>Next Sibling</p>
+        <hr>
+        <div class="button"></div>
+        <a href="google.com">Google</a>
+    </body>
+</html>
