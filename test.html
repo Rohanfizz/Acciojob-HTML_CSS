@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                height: 200vh;
+                background-color: rgb(40, 23, 45);
+            }
+            .container {
+                border: 2px solid black;
+                height: 40vh;
+                width: 60vw;
+                overflow: auto;
+                position: relative;
+                left: 10px;
+            }
+            .container > img {
+                /* border: 4px solid black; */
+                /* position: sticky; */
+                top: 2px;
+                float:right;
+            }
+            .box1 {
+                height: 12rem;
+                width: 12rem;
+                background-color: blue;
+                /* position: absolute; */
+                top: 0;
+                z-index: 10;
+                opacity:100%;
+            }
+            .box2 {
+                position:relative;
+                top: 10px;
+                height: 7rem;
+                width: 7rem;
+                background-color: white;
+                z-index: 11;
+                border-radius: 0.4rem;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            }
+            .box2:hover{
+                transform: scale(0.9);
+                cursor: pointer;
+                background-color: rgb(241, 240, 240);
+            }
+            .box2:active{
+                transform: scale(0.8);
+                cursor: pointer;
+                background-color: rgb(218, 218, 218);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                src="../Lecture 7 HTML Media Tags/image.jpg"
+                height="200"
+                width="150"
+                alt=""
+            />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consectetur iusto inventore distinctio quis quibusdam fugiat nobis,
+            exercitationem itaque deleniti maiores totam aliquid enim officiis?
+            Officia, in excepturi. Recusandae, eveniet officia. Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Neque delectus dolor
+            quisquam molestias? Sequi accusamus eligendi quidem, in iste
+            exercitationem? Quis tempore inventore rerum tenetur quaerat, quos
+            nobis alias molestias, quod provident in pariatur quibusdam, eos
+            eius quasi ipsum voluptate perferendis delectus? Amet, ab! Ut vitae
+            incidunt quos consectetur ad atque, inventore ipsam accusantium
+            fugiat explicabo aliquid est quas minima magni placeat repellat
+            adipisci consequatur nesciunt. Unde, molestiae numquam quaerat
+            doloremque suscipit animi sint, excepturi maiores adipisci
+            dignissimos expedita dolorum! Aperiam, dicta laborum dolores ducimus
+            quae quam? Velit maxime vitae cum repellendus voluptate assumenda
+            sapiente quis praesentium, est culpa autem. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Animi iste beatae quibusdam
+            facilis doloremque illum vel totam perspiciatis incidunt ratione!
+            Eius eligendi et dignissimos autem saepe blanditiis quas assumenda
+            repellat sit, quae cumque minus iusto est ut fugiat a maxime nobis
+            aliquid doloribus officiis cupiditate voluptatibus, harum veritatis
+            sapiente. Quia, optio? Dolore explicabo reiciendis odio ratione?
+            Dolorem illo, eveniet repellat deleniti mollitia dolore temporibus
+            nulla, delectus quidem quas corporis aspernatur consequuntur minima
+            vero debitis corrupti cum a animi quis, amet quaerat assumenda rerum
+            voluptate harum? Ea ullam sunt id reprehenderit maiores unde debitis
+            aspernatur, inventore et quis cumque, quia impedit.
+        </div>
+        <div class="box2"></div>
+    </body>
+</html>
