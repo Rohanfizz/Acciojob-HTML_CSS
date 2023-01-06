@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            .container {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                
+            }
+            .solve {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .two {
+                /* align-self: end; */
+            }
+            .three {
+                /* align-self: start; */
+            }
+
+            .aim {
+                height: 100%;
+                width: 100%;
+                border: 2px solid black;
+            }
+            .case {
+                height: 10rem;
+                width: 10rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .crosshair {
+                background-color: black;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+                font-size: 3rem;
+                display: flex;
+                color: rgb(219, 198, 171);
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+            }
+            .targets {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                position: fixed;
+                bottom: 100;
+                right: 100;
+            }
+            .target {
+                height: 10rem;
+                width: 10rem;
+                background-color: red;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .inner {
+                height: 6rem;
+                width: 6rem;
+                border-radius: 50%;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="aim solve">
+                
+                <div class="case one">
+                    <div class="crosshair">1</div>
+                </div>
+                <div class="case two">
+                    <div class="crosshair">2</div>
+                </div>
+                <div class="case three">
+                    <div class="crosshair">3</div>
+                </div>
+                <div class="case three">
+                    <div class="crosshair">4</div>
+                </div>
+                <div class="case three">
+                    <div class="crosshair">5</div>
+                </div>
+            </div>
+            <div class="targets">
+                <div class="target">
+                    <div class="inner"></div>
+                </div>
+                <div class="target">
+                    <div class="inner"></div>
+                </div>
+                <div class="target">
+                    <div class="inner"></div>
+                </div>
+                <div class="target">
+                    <div class="inner"></div>
+                </div>
+                <div class="target">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

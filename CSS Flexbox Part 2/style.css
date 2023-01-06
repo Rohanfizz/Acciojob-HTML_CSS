@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    align-content:flex-end;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+}
+
+.item1 {
+    background-color: blue;
+    
+}
+.item2 {
+    background-color: red;
+}
+.item3 {
+    background-color: yellow;
+}
+.item4 {
+    background-color: green;
+}
+.item5 {
+    background-color: gray;
+}

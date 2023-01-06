@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            .container{
+                height:100vh;
+                width: 100vw;
+            }
+            .solve{
+                display: flex;
+                align-items: flex-end;
+                justify-content: end;
+            }
+            .aim {
+                height: 10rem;
+                width: 10rem;
+                font-size: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+            }
+            .aim > svg {
+                height: 50%;
+                width: 50%;
+            }
+            .target {
+                height: 10rem;
+                width: 10rem;
+                background-color: red;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+            .inner {
+                height: 6rem;
+                width: 6rem;
+                border-radius: 50%;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container solve">
+            <div class="aim">
+                <svg
+                    fill="#000000"
+                    width="256px"
+                    height="256px"
+                    viewBox="-25.6 -25.6 307.20 307.20"
+                    id="Flat"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#000000"
+                    stroke-width="0.00256"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M224,128a96,96,0,1,1-96-96A95.99991,95.99991,0,0,1,224,128Z"
+                            opacity="0.2"
+                        ></path>
+                        <path
+                            d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.09957,88.09957,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm104,0a8.00008,8.00008,0,0,1-8,8H152a8,8,0,0,1,0-16h24A8.00008,8.00008,0,0,1,184,108Zm-7.49512,48.00293a56.01609,56.01609,0,0,1-97.00976.00049,8.00016,8.00016,0,0,1,13.85058-8.01074,40.01628,40.01628,0,0,0,69.30957-.00049,7.99974,7.99974,0,1,1,13.84961,8.01074Z"
+                        ></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="target">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </body>
+</html>
